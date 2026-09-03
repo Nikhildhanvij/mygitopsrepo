@@ -1,0 +1,12 @@
+appversion: v1
+kind: service
+metadata:
+  name: web-service
+spec:
+ selector:
+   app: web
+ port: 
+   - protocol: TCP
+     port: 80
+     targetport: 80
+  type: LoadBalancer
